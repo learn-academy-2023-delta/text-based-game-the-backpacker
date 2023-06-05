@@ -86,4 +86,8 @@
     Name saw a crowd at one of the (food stand type) and decided join in. If they all thought it was delicious, there must be something to it.  After a short wait, name got (food name) and turned down the street towards the stadium.
 
 	- Go watch a sporting event in person (famous team/sport) - something unique about the team
-    
+    This was the first time name had seen (sporting event) live.  At that moment, name knew they were in another country, and experiencing the culture first-hand.  
+
+    FINAL TIME TO GUESS ^^^^^^
+
+    Name couldn't wait to tell all their friends back home how amazing (COUNTRY) was!
