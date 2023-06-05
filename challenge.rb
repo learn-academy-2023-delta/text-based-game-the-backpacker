@@ -109,62 +109,61 @@ end
 
 def backpacker_story()
    name = get_name
-  loop do
+   loop do
     
-    print_story(story1)
-    if check_guess == true
-       break
-    end
-    print_story(story2)
-    if check_guess == true
-       break
-    end
-    print_story(story3)
-    if check_guess == true
-       break
-    end
-    print_story(story4)
-    if check_guess == true
-       break
-    end
-    print_story(story5)
-    if check_guess == true
-       break
-    end
-    print_story(story6)
-    if check_guess == true
-       break
-    end
-    print_story(story7)
-    if check_guess == true
-       break
-    end
-    print_story(story8)
-    if check_guess == true
-       break
-    end
-    print_story(story9)
-    if check_guess == true
-       break
-    end
-    print_story(story10)
-    if check_guess == true
-       break
-    end
-    print_story(story11)
-    if check_guess == true
-       break
-    end
-    print_story(story12)
-    if check_guess == true
-       break
-    end
-    print_story(story13)
-    if check_guess == true
-       break
-    end
-  end
-  end
+      print_story(story1)
+      if check_guess == true
+         break
+      end
+      print_story(story2)
+      if check_guess == true
+         break
+      end
+      print_story(story3)
+      if check_guess == true
+         break
+      end
+      print_story(story4)
+      if check_guess == true
+         break
+      end
+      print_story(story5)
+      if check_guess == true
+         break
+      end
+      print_story(story6)
+      if check_guess == true
+         break
+      end
+      print_story(story7)
+      if check_guess == true
+         break
+      end
+      print_story(story8)
+      if check_guess == true
+         break
+      end
+      print_story(story9)
+      if check_guess == true
+         break
+      end
+      print_story(story10)
+      if check_guess == true
+         break
+      end
+      print_story(story11)
+      if check_guess == true
+         break
+      end
+      print_story(story12)
+      if check_guess == true
+         break
+      end
+      print_story(story13)
+      if check_guess == true
+         break
+      end
+   end
     if you_won == true
      backpacker_story
     else
