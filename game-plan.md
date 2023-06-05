@@ -1,0 +1,68 @@
+- ### Ideas
+	- fallout style - player chooses different actions at specified steps
+	- gameshow - player has to answer questions
+	- choose your own adventure
+		- **traveling in different countries with different scenarios (carmen san diego?) **
+			- try to guess which country carmen is in
+			- if you figure out the country, do a fun graphic
+	- michael jackson dancing detective
+	
+- Countries
+	- India
+	- Mexico
+	- New Zealand
+	- Jordan (petra)
+	- Romania
+	- Catalonia
+	- Italy
+	- Japan
+	- Morocco
+	- Zanzibar (tanzania kilimanjaro)
+	- China
+	- Peru (machu pichu)
+	- galapagos (ecuador)
+	- Australia
+	- Turkey
+	- Guatemala
+	- Afghanistan
+	- Georgia
+	- Egypt
+
+- Story Points (viewpoint of a new-grad/backpacker)
+	- Restaurants (food)
+	- Sports
+	- Landmarks
+	- Architecture
+	- Animals
+	- Plants
+	- Climate
+	- Clothing
+	- Weather (which hemisphere)
+	- Cultural acceptance (xenophobia?)
+	- Transportation
+	- Alcohol
+	- Social Scene
+	- Lodging
+	- Greeting
+
+- ### Story
+	- Robert lands at the airport.
+		- it was a (length) flight, and `#{name}` can't wait to get out of the airport and start exploring the city. It's their first time leaving the country and they can't wait to start this new experience.
+	- Greeted by immigration
+		- name's first international experience is being met by the immigration official at the gate.  The official asked for name's passport with a (light/heavy) accent. The official was (friendly/cold/standoff-ish) and waved name through after verifying their passport.
+	- Weather (is it hot/cold?)
+		- name took a deep breath and inhaled the (warm/cold) air outside the airport. While waiting for the (type of transport), they decided to (add/remove) clothing to be more comfortable.  While loading into the (transportation) name noticed everyone was very (considerate/uncaring) about personal space.
+	- take transportation to the lodging
+		- name arrived at the (type of lodging) and got a key to the room
+	- take transportation to a bar to relax
+	- Note architecture?
+	- go to a restaurant
+		- buy local dish and local alcohol
+	- do a social event (club/parade)
+	- Go to bed
+	- Wake up (early?)
+	- sight-seeing (landmarks, parks)
+	- Went shopping to get clothes that help you blend in
+	- Get lunch (street food, cafe) (were people nice? excited to see you?)
+	- Go watch a sporting event in person (famous team/sport) - something unique about the team
+	-
