@@ -13,7 +13,7 @@
 #       n - go to next clue
 # COUNTRY HASHES
 
-country_mexico = { 
+mexico = { 
 
     weather: 'warm',
     travel_time: '6 hour',
@@ -38,7 +38,7 @@ country_mexico = {
 
 }
 
-country_italy = { 
+italy = { 
 
     weather: 'mildly warm',
     travel_time: '14 hour',
@@ -63,7 +63,7 @@ country_italy = {
 
 }
 
-country_jordan = { 
+jordan = { 
 
     weather: 'hot',
     travel_time: '16 hour',
@@ -88,7 +88,7 @@ country_jordan = {
 
 }
 
-country_peru = { 
+peru = { 
 
     weather: 'warm',
     travel_time: '11 hour',
@@ -113,7 +113,7 @@ country_peru = {
 
 }
 
-country_turkey = { 
+turkey = { 
 
     weather: 'cold',
     travel_time: '12 hour',
@@ -138,7 +138,7 @@ country_turkey = {
 
 }
 
-country_romania = { 
+romania = { 
 
     weather: 'cold',
     travel_time: '14 hour',
@@ -163,7 +163,7 @@ country_romania = {
 
 }
 
-country_egypt = { 
+egypt = { 
 
     weather: 'hot',
     travel_time: '13 hour',
@@ -191,71 +191,69 @@ country_egypt = {
 name = ""
 
 score = 0
-country = country_mexico
-weather = country[:weather]
+country = mexico
 
 
-def story1
-   p "name's first international experience is being met by the immigration official at the gate.  The official asked for name's passport with a (accent) accent. The official was (friendly/cold/standoff-ish) and waved name through after verifying their passport."
+def story1(country, name)
+   p "#{name}'s first international experience is being met by the immigration official at the gate.  The official asked for name's passport with a #{country[:accent]} accent. The official's greeting was #{country[:greeting]} and waved name through after verifying their passport."
 end
 
-def story2 
-  p "name took a deep breath and inhaled the (warm/cold) air outside the airport. While waiting for the (type of transport), they decided to (add/remove) clothing to be more comfortable.  While loading into the (transportation) name noticed everyone was very (considerate/uncaring) about personal space."
+def story2(country, name)
+  p "#{name} took a deep breath and inhaled the #{country[:weather]} air outside the airport. While waiting for the #{country[:type_of_transport]}, they decided to #{country[:current_clothes]} clothing to be more comfortable.  While loading into the #{country[:type_of_transport]} name noticed everyone was very #{country[:personal_space]} about personal space."
 end
 
-def story3 
-  p "name arrived at the (type of lodging) and got a key to the room.  They went to their room and unloaded all their baggage.  After a big sigh of relief, name decided to go back out to the bar located at the (lodging).  Name ordered a (drink) and looked around to take in their surroundings.  They noticed a lot of people (talking with their hands/ speaking the local language / being loud or quiet).  This was definitely different from home!"
+def story3(country, name) 
+  p "name arrived at the #{country[:lodging_type]} and got a key to the room.  They went to their room and unloaded all their baggage.  After a big sigh of relief, name decided to go back out to the bar located at the #{country[:lodging_type]}.  Name ordered a #{country[:alcoholic_drink]} and looked around to take in their surroundings.  They noticed a lot of people #{country[:local_people_expressions]}.  This was definitely different from home!"
 end  
 
-def story4 
+def story4(country, name)
   p "name started to get hungry, and the bar didn't have much food to offer, so they decided to head out and find a restaurant."
 end
 
-def story5 
-  p "On the (walk/ride) to a restaurant recommended by the (lodging) staff, name noticed how (unique/different) every street looked to each other.  The buildings were very (dense/spread out) with a very (historical style?) flavor, and there were (many/not many) people out walking around.  This made sense, since it was a weekend."
+def story5(country, name) 
+  p "On the #{country[:type_of_transport]} to a restaurant recommended by the #{country[:lodging_type]} staff, name noticed how #{country[:street_view]} every street looked to each other.  The buildings were very #{country[:street_view]} with a very (historical style?) flavor, and there were #{country[:busy_streets]} people out walking around.  This made sense, since it was a weekend."
 end  
 
-def story6 
-  p "At the restaurant, name chose (dish type) because they'd never seen or tasted it before.  The beginning of a new adventure! They chose to drink (drink type) as it seemed to be what many of the other patrons were having.  When in Rome, which we are not, why not partake?"
+def story6(country, name) 
+  p "At the restaurant, name chose #{country[:dish_type]} because they'd never seen or tasted it before.  The beginning of a new adventure! They chose to drink #{country[:drink_type]} as it seemed to be what many of the other patrons were having.  When in Rome, which we are not, why not partake?"
 end  
 
-def story7 
-  p"All the travel books say that you should visit (gallery/landmark name) while you're there, so name decided that would be a good way to learn about the culture a little more authentically. While there, name saw how busy the streets were, even late in the evening. Amazing how different this was from home!"
+def story7(country, name) 
+  p"All the travel books say that you should visit #{country[:gallery]} while you're there, so name decided that would be a good way to learn about the culture a little more authentically. While there, name saw how busy the streets were, even late in the evening. Amazing how different this was from home!"
 end  
 
-def story8 
+def story8(country, name) 
   p "Name lost track of time, and soon enough it was time to get some rest to recharge for the next day.  They also had to get some sleep to make up for the jet-lag they were feeling."
 end  
 
-def story9 
-  p"Breakfast was the first order of business. (Type of food) was a local favorite, so name dove in with the hunger of someone who knew they would have a long day coming up."
+def story9(country, name) 
+  p"Breakfast was the first order of business. #{country[:dish_type]} was a local favorite, so name dove in with the hunger of someone who knew they would have a long day coming up."
 end  
 
-def story10 
-  p " Name decided to go see (landmark/thing) as they'd always seen pictures in magazines. Photos could not do it justice, and name thought it could be one of the 7 wonders of the world!  The scale and historical significance was staggering in person."
+def story10(country, name) 
+  p " Name decided to go see #{country[:landmark]} as they'd always seen pictures in magazines. Photos could not do it justice, and name thought it could be one of the 7 wonders of the world!  The scale and historical significance was staggering in person."
 end    
 
-def story11 
-  p "With the (landmark/thing) still on their mind, name went to find some clothes more appropriate for the weather and local culture.  They'd brought things to keep them (warm/cool) but you can only pack so well on your first international journey!  Name walked out of the store wearing (local clothing) and only feeling slightly like a tourist.  All that shopping sure works up an appetite."
+def story11(country, name) 
+  p "With the #{country[:landmark]} still on their mind, name went to find some clothes more appropriate for the weather and local culture.  They'd brought things to keep them #{country[:weather]} but you can only pack so well on your first international journey!  Name walked out of the store wearing #{country[:local_clothing]} and only feeling slightly like a tourist.  All that shopping sure works up an appetite."
 end  
 
-def story12 p 
-  p "Name saw an ad for the local game tonight and purchased a ticket for the event.  Since it was getting close to time, name decided to walk to the stadium as it was just a few blocks away.  In America, everyone knows that food in stadiums is a complete rip-off, so name decided to stop at a (cart/cafe) to fill up their belly before the game.
-  Name saw a crowd at one of the (food stand type) and decided join in. If they all thought it was delicious, there must be something to it.  After a short wait, name got (food name) and turned down the street towards the stadium."
+def story12(country, name) 
+  p "Name saw an ad for the local game tonight and purchased a ticket for the event.  Since it was getting close to time, name decided to walk to the stadium as it was just a few blocks away.  In America, everyone knows that food in stadiums is a complete rip-off, so name decided to stop at a street vendor to fill up their belly before the game.
+  Name saw a crowd at one of the carts and decided join in. If they all thought it was delicious, there must be something to it.  After a short wait, name got #{country[:street_food]} and turned down the street towards the stadium."
 end  
-def story13 
-  p "Go watch a sporting event in person (famous team/sport) - something unique about the team
-    This was the first time name had seen (sporting event) live.  At that moment, name knew they were in another country, and experiencing the culture first-hand.  "
+def story13(country, name) 
+  p "This was the first time name had seen #{country[:sport_event]} live.  At that moment, name knew they were in another country, and experiencing the best of the local culture first-hand.  "
 end
-
+# prints the correct story to the console
 def print_story(story)
-    counter = 1
+   #  counter = 1
     story
 end
-
+# asks the user to enter their name, returns the input
 def get_name
-   p 'Whats your name?'
-   gets.chomp
+   p "Whats should your character's name be?"
+   gets.chomp.capitalize
 end   
 
 
@@ -270,7 +268,7 @@ def you_won
      false   
   end   
 end  
-  
+#   check if the player's country guess is correct
 def check_country (country)
     p 'What is the country'
        input = gets.chomp.downcase
@@ -278,68 +276,69 @@ def check_country (country)
        true
     end    
 end 
-
-def check_guess
-    p 'Can you guess the place?'
+# asking to guess where the country is
+def check_guess(name)
+    p "Would you like to guess where #{name} is?"
     if gets.chomp.downcase == "yes"
-      check_country('mexico')
+      check_country("mexico")
     end    
 end    
 
-def backpacker_story()
+# Game loop
+def backpacker_story(country)
    name = get_name
    loop do
     
-      print_story(story1)
-      if check_guess == true
+      print_story(story1(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story2)
-      if check_guess == true
+      print_story(story2(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story3)
-      if check_guess == true
+      print_story(story3(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story4)
-      if check_guess == true
+      print_story(story4(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story5)
-      if check_guess == true
+      print_story(story5(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story6)
-      if check_guess == true
+      print_story(story6(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story7)
-      if check_guess == true
+      print_story(story7(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story8)
-      if check_guess == true
+      print_story(story8(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story9)
-      if check_guess == true
+      print_story(story9(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story10)
-      if check_guess == true
+      print_story(story10(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story11)
-      if check_guess == true
+      print_story(story11(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story12)
-      if check_guess == true
+      print_story(story12(country, name))
+      if (check_guess(name)) == true
          break
       end
-      print_story(story13)
-      if check_guess == true
+      print_story(story13(country, name))
+      if (check_guess(name)) == true
          break
       end
    end
@@ -348,11 +347,8 @@ def backpacker_story()
     else
      p 'Thanks for playing' 
    end  
-  #end
+
 end
 
-backpacker_story
-# p name = get_name(name)
-# p "Hi, my name is #{name}"
-# guess = check_country(country, score)
-# p guess
+backpacker_story(country)
+
